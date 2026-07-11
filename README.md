@@ -106,7 +106,7 @@ As velocidades disponíveis são:
 * Portas lógicas
 * Resistores
 * Simulação desenvolvida no **Proteus 7**
-* Uso do Verilog no Quartus Prime
+* Projeto desenvolvido no Intel Quartus Prime para FPGA.
 
 ## Ambiente de Desenvolvimento
 
