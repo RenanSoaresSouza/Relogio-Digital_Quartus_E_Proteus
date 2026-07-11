@@ -6,9 +6,23 @@
 ![Verilog](https://img.shields.io/badge/Verilog-HDL-red)
 ![Proteus](https://img.shields.io/badge/Proteus-7-blue)
 
-Relógio digital desenvolvido sem o uso de microcontroladores.
+Relógio digital desenvolvido utilizando exclusivamente lógica digital, sem o uso de microcontroladores. O projeto possui duas implementações: uma simulação no Proteus 7 e uma implementação em Verilog HDL para FPGA utilizando o Intel Quartus Prime.
 
 O circuito realiza a contagem das horas, minutos e segundos utilizando circuitos lógicos, contadores e divisores de frequência. Além disso, possui um sistema de seleção da velocidade do relógio por meio de um **multiplexador**, permitindo configurar o horário de forma rápida.
+
+---
+
+## Conceitos Aplicados
+
+- Eletrônica Digital
+- Circuitos Combinacionais
+- Circuitos Sequenciais
+- Verilog HDL
+- FPGA
+- Divisão de frequência
+- Multiplexadores
+- Contadores síncronos
+- Decodificadores BCD para sete segmentos
 
 ---
 
@@ -17,8 +31,19 @@ O circuito realiza a contagem das horas, minutos e segundos utilizando circuitos
 Este projeto foi desenvolvido em duas versões:
 
 - **Proteus 7**: simulação do circuito utilizando componentes de Eletrônica Digital.
-- **Intel Quartus**: implementação em Verilog para FPGA, utilizando a mesma arquitetura lógica, utilizando um clock de entrada de 50 MHz.
+- **Intel Quartus**: implementação em Verilog HDL para FPGA, baseada na mesma arquitetura lógica e utilizando um clock de entrada de **50 MHz**.
+
 ---
+
+## Recursos
+
+- Contagem de horas, minutos e segundos.
+- Divisor de frequência para geração de 1 Hz, 10 Hz e 100 Hz.
+- Seleção da velocidade do relógio por multiplexador.
+- Exibição em displays de sete segmentos.
+- Implementações em Proteus e Verilog HDL (Quartus).
+
+ ---
 
 # Demonstração
 
@@ -32,14 +57,18 @@ Este projeto foi desenvolvido em duas versões:
 
 Abra o arquivo:
 
+```text
 Proteus/Relogio_Digital.DSN
+```
 
 ## Quartus
-Extraia o arquivo Quartus/relogio.zip
 
-E abra o arquivo:
-
+abra o arquivo:
+```text
 Quartus/relogio.qpf
+```
+
+> **Observação:** A implementação no Proteus utiliza um clock de entrada de **1 kHz**, enquanto a implementação em Verilog para FPGA utiliza um clock de **50 MHz**. Em ambas as versões, o divisor de frequência gera os sinais de **1 Hz**, **10 Hz** e **100 Hz** utilizados pelo relógio.
 
 ---
 
@@ -69,7 +98,8 @@ As velocidades disponíveis são:
 # Arquitetura do Projeto
 
 ```text
-             Oscilador (1 kHz)
+                 Ocilador
+     Proteus (1 kHz)  Quartus (50Mhz)
                     │
                     ▼
           Divisor de Frequência
@@ -95,21 +125,57 @@ As velocidades disponíveis são:
 ```
 ---
 
-# Componentes Utilizados
+# Estrutura do Projeto
+```
+Digital-Clock/
+│
+├── Proteus/
+│   └── Relogio_Digital.DSN
+│
+├── Quartus/
+│   ├── clk.v
+│   ├── decoder.v
+│   ├── h.v
+│   ├── ms.v
+│   ├── mux.v
+│   ├── relogio.qpf
+│   ├── relogio.qsf
+│   └── relogio.v
+│
+├── Images/
+│
+└── README.md
+```
 
-* Oscilador de 1 kHz
-* Divisor de frequência
-* Multiplexador
-* Contadores BCD
-* Decodificadores BCD para sete segmentos
-* Displays de sete segmentos
-* Portas lógicas
-* Resistores
-* Simulação desenvolvida no **Proteus 7**
-* Projeto desenvolvido no Intel Quartus Prime para FPGA.
+---
+
+## Tecnologias e Componentes
+
+### Hardware Digital
+
+- Oscilador
+- Divisor de frequência
+- Multiplexador
+- Contadores BCD
+- Decodificadores BCD para sete segmentos
+- Displays de sete segmentos
+- Portas lógicas
+
+### Ferramentas
+
+- Proteus 7
+- Intel Quartus Prime Lite Edition 17.0
+- Verilog HDL
 
 ## Ambiente de Desenvolvimento
 
 - Intel Quartus Prime Lite Edition 17.0.0 (Build 595)
-- Proteus 7
 - Linguagem: Verilog HDL
+- FPGA alvo: Intel MAX 10 (10M50DAF484C7G)
+- Proteus 7
+
+## Autor
+
+Desenvolvido por **Renan Soares Souza**.
+
+Projeto desenvolvido para estudo de Eletrônica Digital, Sistemas Digitais e FPGA.
