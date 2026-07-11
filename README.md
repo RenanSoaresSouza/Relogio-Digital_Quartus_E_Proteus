@@ -181,3 +181,5 @@ Digital-Clock/
 Desenvolvido por **Renan Soares Souza**.
 
 Projeto desenvolvido para estudo de Eletrônica Digital, Sistemas Digitais e FPGA.
+
+Esse Repositório possui a Licença MIT - para mais Informações, Acesse [LICENSE](LICENSE).
