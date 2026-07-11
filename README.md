@@ -5,6 +5,7 @@
 ![Clock](https://img.shields.io/badge/Clock-Divider-1Hz%2F10Hz%2F100Hz)
 ![Verilog](https://img.shields.io/badge/Verilog-HDL-red)
 ![Proteus](https://img.shields.io/badge/Proteus-7-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Relógio digital desenvolvido utilizando exclusivamente lógica digital, sem o uso de microcontroladores. O projeto possui duas implementações: uma simulação no Proteus 7 e uma implementação em Verilog HDL para FPGA utilizando o Intel Quartus Prime.
 
