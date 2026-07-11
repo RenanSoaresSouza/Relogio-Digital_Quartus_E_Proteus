@@ -1,0 +1,112 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 09:38:50  July 04, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		relogio_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY rel
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:38:50  JULY 04, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VERILOG_FILE relogio.v
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE ms.v
+set_global_assignment -name VERILOG_FILE h.v
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE decoder.v
+set_location_assignment PIN_C10 -to aj
+set_location_assignment PIN_N20 -to hd[6]
+set_location_assignment PIN_N19 -to hd[5]
+set_location_assignment PIN_M20 -to hd[4]
+set_location_assignment PIN_N18 -to hd[3]
+set_location_assignment PIN_L18 -to hd[2]
+set_location_assignment PIN_K20 -to hd[1]
+set_location_assignment PIN_J20 -to hd[0]
+set_location_assignment PIN_F20 -to hu[6]
+set_location_assignment PIN_F19 -to hu[5]
+set_location_assignment PIN_H19 -to hu[4]
+set_location_assignment PIN_J18 -to hu[3]
+set_location_assignment PIN_E19 -to hu[2]
+set_location_assignment PIN_E20 -to hu[1]
+set_location_assignment PIN_F18 -to hu[0]
+set_location_assignment PIN_E17 -to md[6]
+set_location_assignment PIN_D19 -to md[5]
+set_location_assignment PIN_C20 -to md[4]
+set_location_assignment PIN_C19 -to md[3]
+set_location_assignment PIN_E21 -to md[2]
+set_location_assignment PIN_E22 -to md[1]
+set_location_assignment PIN_F21 -to md[0]
+set_location_assignment PIN_B22 -to mu[6]
+set_location_assignment PIN_C22 -to mu[5]
+set_location_assignment PIN_B21 -to mu[4]
+set_location_assignment PIN_A21 -to mu[3]
+set_location_assignment PIN_B19 -to mu[2]
+set_location_assignment PIN_A20 -to mu[1]
+set_location_assignment PIN_B20 -to mu[0]
+set_location_assignment PIN_B17 -to sd[6]
+set_location_assignment PIN_A18 -to sd[5]
+set_location_assignment PIN_A17 -to sd[4]
+set_location_assignment PIN_B16 -to sd[3]
+set_location_assignment PIN_E18 -to sd[2]
+set_location_assignment PIN_D18 -to sd[1]
+set_location_assignment PIN_C18 -to sd[0]
+set_location_assignment PIN_C17 -to su[6]
+set_location_assignment PIN_D17 -to su[5]
+set_location_assignment PIN_E16 -to su[4]
+set_location_assignment PIN_C16 -to su[3]
+set_location_assignment PIN_C15 -to su[2]
+set_location_assignment PIN_E15 -to su[1]
+set_location_assignment PIN_C14 -to su[0]
+set_location_assignment PIN_A8 -to mux[0]
+set_location_assignment PIN_A9 -to mux[1]
+set_global_assignment -name BDF_FILE output_files/relogio.bdf
+set_location_assignment PIN_D13 -to clk
+set_global_assignment -name VERILOG_FILE mux.v
+set_location_assignment PIN_P11 -to clk_in
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
