@@ -182,4 +182,6 @@ Desenvolvido por **Renan Soares Souza**.
 
 Projeto desenvolvido para estudo de Eletrônica Digital, Sistemas Digitais e FPGA.
 
-Esse Repositório possui a Licença MIT - para mais Informações, Acesse [LICENSE](LICENSE).
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
