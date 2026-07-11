@@ -17,6 +17,7 @@ O circuito realiza a contagem das horas, minutos e segundos utilizando circuitos
 ---
 
 # Funcionamento
+você precisará do [Proteus 7](https://drive.google.com/file/d/1X75k0Edv7DFmONA06vuNyactwQqcQGk6/view?usp=sharing) para abrir o Relogio_Digital.DSN
 
 O relógio recebe um sinal de clock de **1 kHz** proveniente de um oscilador.
 
