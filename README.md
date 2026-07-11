@@ -144,9 +144,10 @@ Digital-Clock/
 │   ├── relogio.qsf
 │   └── relogio.v
 │
-├── Images/
-│
-└── README.md
+├── Gif/
+│    └── Proteus.gif 
+├── README.md
+└── LICENSE
 ```
 
 ---
