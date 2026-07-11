@@ -47,7 +47,9 @@ Este projeto foi desenvolvido em duas versões:
 
 # Demonstração
 
-> Adicione aqui capturas de tela da simulação no Proteus ou um GIF mostrando o funcionamento do circuito.
+> Execução com 100 Hz de clock
+
+![Proteus_Gif](/Gif/Proteus.gif)
 
 ---
 
