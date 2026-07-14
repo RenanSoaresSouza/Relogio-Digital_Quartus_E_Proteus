@@ -175,7 +175,7 @@ Digital-Clock/
 
 - Intel Quartus Prime Lite Edition 17.0.0 (Build 595)
 - Linguagem: Verilog HDL
-- FPGA alvo: Intel MAX 10 (10M50DAF484C7G)
+- FPGA Usado: Intel MAX 10 (10M50DAF484C7G)
 - Proteus 7
 
 ## Autor
